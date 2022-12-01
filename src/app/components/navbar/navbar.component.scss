@@ -1,0 +1,63 @@
+.navbar-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-family: 'Staatliches';
+  letter-spacing: 1px;
+
+  .logo{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding-left: 30px;
+
+    .item{
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      color: rgb(240, 248, 255);
+      &:hover{
+        background-color: rgb(240, 248, 255);
+        color: rgb(0, 0, 0);
+      }
+    }
+
+  }
+
+  .itens{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    //gap: 30px;
+    padding-right: 30px;
+
+    .item{
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      color: rgb(240, 248, 255);
+      &:hover{
+        background-color: rgb(240, 248, 255);
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+}

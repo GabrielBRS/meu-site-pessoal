@@ -1,0 +1,162 @@
+.common-body{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  padding-bottom: 50px;
+
+  .common-title{
+    font-family: 'Philosopher';
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 20px;
+  }
+
+  .common-boder-title{
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(182, 27, 27);
+    margin-bottom: 20px;
+  }
+
+  .common-area-card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+
+    .common-line-card{
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      margin-bottom: 35px;
+
+      .text-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        font-size: 22px;
+        margin-right: 60px;
+        margin-left: 60px;
+      }
+
+      .margin-contato{
+
+      }
+
+    }
+  }
+}
+.produtos{
+
+  .title{
+
+  }
+
+  .boder-title{
+
+  }
+}
+
+.common-model-card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin-right: 15px;
+
+  a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    .icon-instagram{
+      width: 40px;
+      height: 40px;
+      fill: rgb(124, 0, 124);
+      &:hover{
+        fill: rgb(204, 21, 204);
+      }
+    }
+
+    .icon-whatsap{
+      width: 40px;
+      height: 40px;
+      fill: rgb(0, 129, 0);
+      &:hover{
+        fill: rgb(38, 211, 38);
+      }
+    }
+
+    .icon-github{
+      width: 40px;
+      height: 40px;
+      fill: rgb(0, 0, 0);
+      &:hover{
+        fill: rgb(43, 40, 40);
+      }
+    }
+
+    .icon-linkedin{
+      width: 40px;
+      height: 40px;
+      fill: rgb(0, 0, 255);
+      &:hover{
+        fill: rgb(68, 68, 252);
+      }
+    }
+  }
+}
+
+.common-rastreador-id{
+  position: relative;
+  top:-100px;
+}
+
