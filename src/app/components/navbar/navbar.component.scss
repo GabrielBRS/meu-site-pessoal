@@ -1,3 +1,6 @@
+:host{
+  border-bottom: 1px solid #696e79;
+}
 .navbar-content{
   display: flex;
   flex-direction: row;
@@ -7,7 +10,7 @@
   align-content: center;
   height: 100%;
   width: 100%;
-  color: white;
+  color: #01c38d;
   font-family: 'Staatliches';
   letter-spacing: 1px;
 
@@ -27,10 +30,11 @@
       cursor: pointer;
       border-radius: 5px;
       text-decoration: none;
-      color: rgb(240, 248, 255);
+      color: #01c38d;
       &:hover{
-        background-color: rgb(240, 248, 255);
-        color: rgb(0, 0, 0);
+        background-color: #01c38d;
+        color: #191e29;
+        transition: all 1.5s;
       }
     }
 
@@ -53,10 +57,11 @@
       cursor: pointer;
       border-radius: 5px;
       text-decoration: none;
-      color: rgb(240, 248, 255);
+      color: #01c38d;
       &:hover{
-        background-color: rgb(240, 248, 255);
-        color: rgb(0, 0, 0);
+        background-color: #01c38d;
+        color: #191e29;
+        transition: all 1.5s;
       }
     }
   }

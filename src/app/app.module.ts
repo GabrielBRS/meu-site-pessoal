@@ -4,9 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './pages/home/home.module';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { FooterModule } from './components/footer/footer.module';
+import { ProductsModule } from './pages/products/products.module';
+import { ServicosModule } from './pages/servicos/servicos.module';
+import { ServicosService } from './servicos.service';
 
 @NgModule({
   declarations: [
@@ -20,10 +23,12 @@ import { FooterModule } from './components/footer/footer.module';
     AppRoutingModule,
     //Pages
     HomeModule,
+    ProductsModule,
+    ServicosModule,
     NavbarModule,
     FooterModule,
   ],
-  providers: [],
+  providers:[ServicosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

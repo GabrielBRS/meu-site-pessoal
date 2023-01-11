@@ -48,7 +48,7 @@ export class ModelCardComponent implements OnInit {
       this.shadowBoxCenter = "expandido-shadow-box-center";
       this.shadowBoxRight = "expandido-shadow-box-right";
     }
-    console.log(this.shadowBoxNumber, this.shadowBoxCenter, "shadow "+this.orientatioShadowBox)
+    //console.log(this.shadowBoxNumber, this.shadowBoxCenter, "shadow "+this.orientatioShadowBox)
   }
 
   shadowBoxNumberReset(){
