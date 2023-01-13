@@ -12,12 +12,14 @@ export class HomeComponent implements OnInit {
   clicked=false;
   timeSeconds:any = 5000;
   el:any = document.getElementById("button-card");
+  setStyleCss:any = 'justify-content: center; align-items: center;margin-top: 10px; width: 150px; border: 1px solid #01c38d; font-size: 16px; border-radius: 5px; background-color: transparent; padding: 5px; color: aliceblue; cursor: pointer;';
 
   constructor() { }
 
   ngOnInit(): void {
+    this.setStyle;
     setInterval(() => {
-        this.setTimeBox(++this.selectButton);
+        this.setTimeBox(this.selectButton=1);
     }, this.timeSeconds);
   }
 
@@ -63,4 +65,12 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  setStyle(style:any){
+    if(style==='leave'){
+      this.setStyleCss = 'justify-content: center; align-items: center;margin-top: 10px; width: 150px; border: 1px solid #01c38d; font-size: 16px; border-radius: 5px; background-color: transparent; padding: 5px; color: aliceblue; cursor: pointer;'
+    }
+    if(style==='down'){
+      this.setStyleCss = 'justify-content: center; align-items: center;margin-top: 10px; width: 150px; border: 1px solid aliceblue; font-size: 16px; border-radius: 5px; background-color: transparent; padding: 5px; color: #01c38d; cursor: pointer;'
+    }
+  }
 }

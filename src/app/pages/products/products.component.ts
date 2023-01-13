@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute} from '@angular/router';
 import { ServicosService } from '../../servicos.service';
 
 @Component({
@@ -7,22 +8,28 @@ import { ServicosService } from '../../servicos.service';
   styleUrls: ['./products.component.scss'],
   providers:[ServicosService]
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent implements OnInit{
 
-  idService:any;
+  routeParams:any=undefined;
+  routeProducts:any=undefined;
+  routeParamsBoolean:any=undefined;
 
-  constructor(private servicosService:ServicosService) {
-    this.servicosService.getIdService().subscribe(x=>{
-      this.idService = x;
-    })
+  constructor(private route:ActivatedRoute,private servicosService:ServicosService) {
+    // this.servicosService.getIdService().subscribe(route=>{
+    //   this.routeParams = route;
+    // })
   }
 
   ngOnInit(): void {
-    // this.setIdService();
+    this.setIdRoute();
   }
 
-  // setIdService(id?:any){
-  //   this.servicosService.setIdService(id);
-  // }
+  setIdRoute(){
+    setInterval(()=>{
+      this.routeProducts = localStorage.getItem('routeProducts');
+      this.routeParams = localStorage.getItem('routeParams');
+      this.routeParamsBoolean = localStorage.getItem('routeParamsBoolean');
+    },100)
+  }
 
 }

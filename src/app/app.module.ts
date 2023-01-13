@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +29,9 @@ import { ServicosService } from './servicos.service';
     FooterModule,
   ],
   providers:[ServicosService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA,
+  ]
 })
 export class AppModule { }

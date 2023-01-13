@@ -11,11 +11,22 @@
             GB Technology
           </div>
           <div class="text">
-            GB Techonlogy é uma Empresa de Software que presa
+            GB Techonlogy é uma Empresa de Software que presa dar ao usuário a melhor qualidade que a tecnologia pode oferecer
           </div>
+          <div class="text">
+            Contamos com um pessoal altamente qualificado e seriedade é o que procuramos
+          </div>
+          <div class="text" style="justify-content: center; align-items: center;margin-top: 10px;">
+            Entre em contato conosco
+          </div>
+          <a class="text" style="justify-content: center; align-items: center;margin-top: 10px; text-decoration: none;" href="#contate-nos">
+            <button id="button-card" class="button-card" [style]="this.setStyleCss" (mouseenter)="setStyle('down')" (mouseleave)="setStyle('leave')">Contato</button>
+          </a>
         </div>
         <div class="ilustration ibox1">
-          <div class="inner"></div>
+          <div class="inner">
+            <div class="img"></div>
+          </div>
         </div>
       </div>
       <div class="box2 common-box" *ngIf="selectButton===2">

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductsComponent } from './products.component';
 import { RouterModule } from '@angular/router';
@@ -11,5 +11,8 @@ import { RouterModule } from '@angular/router';
     RouterModule,
   ],
   exports:[ProductsComponent],
+  schemas:[
+    CUSTOM_ELEMENTS_SCHEMA,
+  ]
 })
 export class ProductsModule { }
