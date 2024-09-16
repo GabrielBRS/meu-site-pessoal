@@ -1,0 +1,236 @@
+<div class="common-body produtos">
+  <div id="servicos" class="common-rastreador-id"></div>
+  <div class="common-title title">Serviços</div>
+  <div class="common-boder-title boder-title"></div>
+
+  <div class="display-dinamic-box">
+    <div class="dinamic-box">
+      <div class="box1 common-box" *ngIf="selectButton===1">
+        <div class="details">
+          <div class="title">
+            GB Technology
+          </div>
+          <div class="text">
+            GB Techonlogy é uma Empresa de Software que presa dar ao usuário a melhor qualidade que a tecnologia pode oferecer
+          </div>
+          <div class="text">
+            Contamos com um pessoal altamente qualificado e seriedade é o que procuramos
+          </div>
+          <div class="text" style="justify-content: center; align-items: center;margin-top: 10px;">
+            Entre em contato conosco
+          </div>
+          <a class="text" style="justify-content: center; align-items: center;margin-top: 10px; text-decoration: none;" href="#contate-nos">
+            <button id="button-card" class="button-card" [style]="this.setStyleCss" (mouseenter)="setStyle('down')" (mouseleave)="setStyle('leave')">Contato</button>
+          </a>
+        </div>
+        <div class="ilustration ibox1">
+          <div class="inner">
+            <div class="img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="box2 common-box" *ngIf="selectButton===2">
+        <div class="details">
+          <div class="title">
+            Sites
+          </div>
+          <div class="text">
+            bbb
+          </div>
+        </div>
+        <div class="ilustration ibox2">
+          <div class="inner"></div>
+        </div>
+      </div>
+      <div class="box3 common-box" *ngIf="selectButton===3">
+        ccc
+      </div>
+      <div class="box4 common-box" *ngIf="selectButton===4">
+        ddd
+      </div>
+      <div class="box5 common-box" *ngIf="selectButton===5">
+        eee
+      </div>
+      <div class="chevron-left common-svg" (click)="chevronIncDec(-1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+        </svg>
+      </div>
+      <div class="chevron-right common-svg" (click)="chevronIncDec(+1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="common-box-area">
+    <div class="common-line-box">
+      <div class="common-card-products">
+        <div class="cards" [routerLink]="['/servicos/'+'/1']" >
+          <div class="common-card-title">Sites</div>
+          <div class="sub-cards-group">
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/1'+'/1']">Self Publi</a>
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/1'+'/2']">Pequenas Empresas</a>
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/1'+'/3']">Grandes Empresas</a>
+          </div>
+          <a class="button-area" [routerLink]="['/servicos/'+'/1']" >
+            <button id="button-card" class="button-card" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <span class="button-animate-child">Comprar</span>
+            </button>
+          </a>
+        </div>
+        <div class="cards" [routerLink]="['/servicos/'+'/2']">
+          <div class="common-card-title">Banco de Dados</div>
+          <div class="sub-cards-group">
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/2'+'/1']">Arquitetura Tradicional</a>
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/2'+'/2']">Arquitetura de Microsserviços</a>
+          </div>
+          <a class="button-area" [routerLink]="['/servicos/'+'/2']" >
+            <button id="button-card" class="button-card" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <span class="button-animate-child">Comprar</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-line-box">
+      <div class="common-card-products">
+        <a class="cards" [routerLink]="['/servicos/'+'/3']">
+          <div class="common-card-title">Aplicações em nuvem</div>
+          <div class="sub-cards-group">
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/3'+'/1']">Arquitetura Tradicional</a>
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/3'+'/2']">Arquitetura de Microsserviços</a>
+          </div>
+          <a class="button-area" [routerLink]="['/servicos/'+'/3']" >
+            <button id="button-card" class="button-card" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <span class="button-animate-child">Comprar</span>
+            </button>
+          </a>
+        </a>
+        <div class="cards" [routerLink]="['/servicos/'+'/4']">
+          <div class="common-card-title">Data Science</div>
+          <div class="sub-cards-group">
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/4'+'/1']">Consultoria em Data Science</a>
+          </div>
+          <a class="button-area" [routerLink]="['/servicos/'+'/4']" >
+            <button id="button-card" class="button-card" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <span class="button-animate-child">Comprar</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="common-line-box">
+      <div class="common-card-products">
+        <div class="cards" [routerLink]="['/servicos/'+'/5']">
+          <div class="common-card-title">Machine Learning e Inteligência Artificial</div>
+          <div class="sub-cards-group">
+            <a class="sub-cards" [routerLink]="['/servicos/'+'/5'+'/1']">Consultoria em Machinhe Learning</a>
+          </div>
+          <a class="button-area" [routerLink]="['/servicos/'+'/5']" >
+            <button id="button-card" class="button-card" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+              <span class="button-animate-child">Comprar</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+</div>
+<div class="common-body quem-somos">
+  <div id="quem-somos" class="common-rastreador-id"></div>
+  <div class="common-title title">Quem Somos</div>
+  <div class="common-boder-title boder-title"></div>
+
+  <div class="common-area-explanation area-explanation">
+    <div class="left-box">
+      <div class="text-content">Queremos entregar para você a melhor experiência que a Tecnologia pode oferecer. Melhorando sua visibilidade, produtividade e rendimento do seu negócio.</div>
+      <div class="text-content">Aliás, profissionalismo é conosco mesmo, confira abaixo nossos projetos realizados e perfil profissional: </div>
+      <div class="icons">
+        <a href="https://github.com/GabrielBRS" target="_blank">
+          <svg class="common-icon icon-github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/enggabrielbarros/" target="_blank">
+          <svg class="common-icon icon-linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>        </a>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="text-content">Pôr Imagens</div>
+    </div>
+  </div>
+</div>
+<div class="common-body casos-de-sucesso">
+  <div id="casos-de-sucesso" class="common-rastreador-id"></div>
+  <div class="common-title title">Casos de Sucesso</div>
+  <div class="common-boder-title boder-title"></div>
+
+  <div class="common-area-card area-card">
+    <div class="common-line-card line-card">
+      <app-model-card [class]="'common-model-card '" [title]="'Pizza Amore'" imgSrc="/assets/img/nova-logo-pizza-amore.jpeg" hrefSrc="https://pizzaamore.com.br/" orientatioShadowBox="left"></app-model-card>
+    </div>
+  </div>
+</div>
+<div class="common-body contate-nos">
+  <div id="contate-nos" class="common-rastreador-id"></div>
+  <div class="common-title title">Contate-nos</div>
+  <div class="common-boder-title boder-title"></div>
+
+  <div class="common-area-card area-card">
+    <div class="common-area-explanation area-explanation">
+      <div class="left-box">
+        <div class="text-content">Caso esteja interessado em adquirir nossos produtos e serviços. Entre em o contato conosco abaixo pelo Instagram ou Whatsap, ficaremos contentes em atendê-los:</div>
+        <div class="icons">
+          <a href="https://www.instagram.com/gabrielsousa_software.develope/" target="_blank">
+            <svg class="common-icon icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><title>Instagram</title><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          </a>
+          <a href="https://wa.me/5561996924091" target="_blank">
+            <svg class="common-icon icon-whatsap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="green"><title>Whatsap</title><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          </a>
+          </div>
+      </div>
+      <div class="right-box">
+        <div class="text-content">email: gabriel.brs.gsousa@gmail.com</div>
+      </div>
+    </div>
+    <div class="common-line-card line-card">
+      <div class="icons">
+
+      </div>
+      <div class="icons">
+
+      </div>
+    </div>
+    <form class="forme-data-group" action="mailto:gabriel.brs.gsousa@gmail.com" method="post" enctype="text/plain" >
+      <div class="input-forme">
+        <div class="text-label">Nome:</div>
+      </div>
+      <div id="input-forme-name" class="input-forme">
+        <input class="input-forme-data" placeholder="Preencha seu nome" id="name" type="text" name="Name">
+      </div>
+      <div class="input-forme">
+        <div class="text-label">Email:</div>
+      </div>
+      <div class="input-forme">
+        <input class="input-forme-data" placeholder="Preencha seu email" id="email" type="text" name="Email">
+      </div>
+      <div class="input-forme">
+        <div class="text-label">Telefone:</div>
+      </div>
+      <div class="input-forme">
+        <input class="input-forme-data" placeholder="Preencha seu telefone" id="phone" type="text" name="Phone">
+      </div>
+      <div class="input-forme">
+        <div class="text-label">Mensagem:</div>
+      </div>
+      <div class="input-forme">
+        <textarea class="input-forme-data" placeholder="Escreva sua mensagem" name="Message" id="message" cols="30" rows="10"></textarea>
+      </div>
+      <div id="input-forme-submit" class="input-forme">
+        <input id="submit" class="input-forme-submit" type="submit" name="submit" value="Enviar">
+      </div>
+    </form>
+  </div>
+</div>

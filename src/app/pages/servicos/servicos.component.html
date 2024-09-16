@@ -1,0 +1,50 @@
+<div class="container-area">
+    <div class="services-area" *ngIf="this.routeParams==='1'">
+        <p>Sites</p>
+        <button [routerLink]="['/servicos'+'/1'+this.routeServices+'/1']" (click)="setIdProduct('/1');booleanProduct()">1</button>
+        <button [routerLink]="['/servicos'+'/1'+this.routeServices+'/2']" (click)="setIdProduct('/2');booleanProduct()">2</button>
+        <button [routerLink]="['/servicos'+'/1'+this.routeServices+'/3']" (click)="setIdProduct('/3');booleanProduct()">3</button>
+        <div class="button-box">
+            <button [routerLink]="['/servicos'+'/1'+'/1']" (click)="setIdService('/1')">Ver Detalhes</button>
+            <button [routerLink]="['/servicos'+'/1'+'/2']" (click)="setIdService('/2')">Ver Preços</button>
+        </div>
+    </div>
+    <div class="services-area" *ngIf="this.routeParams==='2'">
+        <p>banco de dados works!</p>
+        <button [routerLink]="['/servicos'+'/2'+this.routeServices+'/1']" (click)="setIdProduct('/1')">1</button>
+        <button [routerLink]="['/servicos'+'/2'+this.routeServices+'/2']" (click)="setIdProduct('/2')">2</button>
+        <div class="button-box">
+            <button [routerLink]="['/servicos'+'/2'+'/1']" (click)="setIdService('/1')">Ver Detalhes</button>
+            <button [routerLink]="['/servicos'+'/2'+'/2']" (click)="setIdService('/2')">Ver Preços</button>
+        </div>
+    </div>
+    <div class="services-area" *ngIf="this.routeParams==='3'">
+        <p>aplicações em nuvem works!</p>
+        <button [routerLink]="['/servicos'+'/3'+this.routeServices+'/1']" (click)="setIdProduct('/1')">1</button>
+        <button [routerLink]="['/servicos'+'/3'+this.routeServices+'/2']" (click)="setIdProduct('/2')">2</button>
+        <button [routerLink]="['/servicos'+'/3'+this.routeServices+'/3']" (click)="setIdProduct('/3')">3</button>
+        <div class="button-box">
+            <button [routerLink]="['/servicos'+'/3'+'/1']" (click)="setIdService('/1')">Ver Detalhes</button>
+            <button [routerLink]="['/servicos'+'/3'+'/2']" (click)="setIdService('/2')">Ver Preços</button>
+        </div>
+    </div>
+    <div class="services-area" *ngIf="this.routeParams==='4'">
+        <p>data science works!</p>
+        <button [routerLink]="['/servicos'+'/4'+this.routeServices+'/1']" (click)="setIdProduct('/1')">1</button>
+        <div class="button-box">
+            <button [routerLink]="['/servicos'+'/4'+'/1']" (click)="setIdService('/1')">Ver Detalhes</button>
+            <button [routerLink]="['/servicos'+'/4'+'/2']" (click)="setIdService('/2')">Ver Preços</button>
+        </div>
+    </div>
+    <div class="services-area" *ngIf="this.routeParams==='5'">
+        <p>machine learning e inteligência artificial works!</p>
+        <button [routerLink]="['/servicos'+'/5'+this.routeServices+'/1']" (click)="setIdProduct('/1')">1</button>
+        <div class="button-box">
+            <button [routerLink]="['/servicos'+'/5'+'/1']" (click)="setIdService('/1')">Ver Detalhes</button>
+            <button [routerLink]="['/servicos'+'/5'+'/2']" (click)="setIdService('/2')">Ver Preços</button>
+        </div>
+    </div>
+    <div class="details-area">
+        <router-outlet></router-outlet>
+    </div>
+</div>

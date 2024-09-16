@@ -1,0 +1,27 @@
+<div *ngIf="this.routeParamsBoolean==='false'">
+    <p>products works! aa</p>
+</div>
+<ng-container *ngIf="this.routeParamsBoolean==='true'">
+    <ng-container *ngIf="this.routeParams==='1'">
+        <p>products works!</p>
+        <div *ngIf="this.routeProducts==='/1'">
+            Self Publi
+        </div>
+        <div *ngIf="this.routeProducts==='/2'">
+            Pequenas Empresas
+        </div>
+        <div *ngIf="this.routeProducts==='/3'">
+            Grandes Empresas
+        </div>
+    </ng-container>
+    <div *ngIf="this.routeParams==='2'">
+        <p>products works!</p>
+        <div *ngIf="this.routeProducts==='/1'">
+            Arquitetura Tradicional
+        </div>
+        <div *ngIf="this.routeProducts==='/2'">
+            Arquitetura Microsserviço
+        </div>
+    </div>
+</ng-container>
+<!-- <router-outlet></router-outlet> -->

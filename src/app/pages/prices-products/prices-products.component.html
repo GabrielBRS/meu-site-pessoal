@@ -1,0 +1,21 @@
+<div *ngIf="this.routeProducts===undefined">
+    <p>prices-products works! aa</p>
+</div>
+<div *ngIf="this.routeProducts!=undefined">
+    <div *ngIf="this.routeProducts===undefined">
+        <p>prices-products works!</p>
+    </div>
+    <div *ngIf="this.routeProducts!=undefined">
+        <p>products works!</p>
+        <div *ngIf="this.routeProducts==='/1'">
+            2000
+        </div>
+        <div *ngIf="this.routeProducts==='/2'">
+            4000
+        </div>
+        <div *ngIf="this.routeProducts==='/3'">
+            8000
+        </div>
+    </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
